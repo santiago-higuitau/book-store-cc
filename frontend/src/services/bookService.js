@@ -15,9 +15,15 @@ const toBook = (raw) => ({
   image: raw.image,
 });
 
+// Maximum page size the API accepts (BOOKS_MAX_LIMIT). Without it the server
+// answers with its default page and the catalog would be cut short.
+const CATALOG_PAGE_SIZE = 100;
+
 export const bookService = Object.freeze({
   list: async () => {
-    const { data } = await api.get(bookEndpoints.list);
+    const { data } = await api.get(bookEndpoints.list, {
+      params: { limit: CATALOG_PAGE_SIZE },
+    });
     return data.map(toBook);
   },
 
