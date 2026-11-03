@@ -3,7 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 import { recommendationKeys } from "../lib/queryKeys.js";
 import { recommendationService } from "../services/recommendationService.js";
 
-const RECOMMENDATIONS_LIMIT = 5;
+const RECOMMENDATIONS_LIMIT = 10;
 const STALE_TIME_MS = 5 * 60_000;
 
 export const useRecommendations = (bookId) =>
