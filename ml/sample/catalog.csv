@@ -1,0 +1,13 @@
+book_id,category,title
+00000000-0000-4000-9000-000000000001,Data Systems,Designing Data-Intensive Applications
+00000000-0000-4000-9000-000000000002,Machine Learning,Designing Machine Learning Systems
+00000000-0000-4000-9000-000000000003,Machine Learning,Building Machine Learning Powered Applications
+00000000-0000-4000-9000-000000000004,Machine Learning,Machine Learning Engineering
+00000000-0000-4000-9000-000000000005,Software Engineering,Clean Code
+00000000-0000-4000-9000-000000000006,Software Engineering,The Pragmatic Programmer
+00000000-0000-4000-9000-000000000007,Programming,The C Programming Language
+00000000-0000-4000-9000-000000000008,Computer Science,Introduction to Algorithms
+00000000-0000-4000-9000-000000000009,Distributed Systems,Designing Distributed Systems
+00000000-0000-4000-9000-000000000010,Data Engineering,Fundamentals of Data Engineering
+00000000-0000-4000-9000-000000000011,Software Architecture,Fundamentals of Software Architecture
+00000000-0000-4000-9000-000000000012,Software Architecture,Clean Architecture
