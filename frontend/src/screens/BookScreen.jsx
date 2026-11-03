@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Alert, Button, Col, Form, Image, ListGroup, Row } from "react-bootstrap";
 import { Link, useNavigate, useParams } from "react-router-dom";
 
+import RelatedBooks from "../components/RelatedBooks.jsx";
 import { useAuth } from "../hooks/useAuth.js";
 import { useBook } from "../hooks/useBooks.js";
 import { useCart } from "../hooks/useCart.js";
@@ -134,6 +135,8 @@ const BookDetail = ({ book }) => {
           </ListGroup>
         </Col>
       </Row>
+
+      <RelatedBooks bookId={book.id} />
     </>
   );
 };

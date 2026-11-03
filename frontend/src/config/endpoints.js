@@ -10,6 +10,11 @@ export const bookEndpoints = Object.freeze({
   detail: (isbn) => `${booksBasePath}/${encodeURIComponent(isbn)}`,
 });
 
+export const mlEndpoints = Object.freeze({
+  recommendations: (bookId) =>
+    `${frontendConfig.mlPrefix}/recommendations/${encodeURIComponent(bookId)}`,
+});
+
 export const authEndpoints = Object.freeze({
   login: `${authBasePath}/login`,
   me: `${authBasePath}/me`,

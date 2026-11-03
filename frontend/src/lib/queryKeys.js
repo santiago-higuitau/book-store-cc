@@ -8,6 +8,11 @@ export const bookKeys = Object.freeze({
   detail: (isbn) => [...bookKeys.all, "detail", isbn],
 });
 
+export const recommendationKeys = Object.freeze({
+  all: ["recommendations"],
+  forBook: (bookId, limit) => [...recommendationKeys.all, bookId, limit],
+});
+
 export const orderKeys = Object.freeze({
   all: ["orders"],
   list: () => [...orderKeys.all, "list"],

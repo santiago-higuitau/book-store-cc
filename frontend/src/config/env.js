@@ -16,9 +16,13 @@ const normalizePrefix = (value, name) => {
   return value.replace(/\/$/, "");
 };
 
+const optionalPrefix = (name, fallback) =>
+  normalizePrefix(import.meta.env[name]?.trim() || fallback, name);
+
 export const frontendConfig = Object.freeze({
   apiBaseUrl: requiredValue("VITE_API_BASE_URL"),
   apiPrefix: normalizePrefix(requiredValue("VITE_API_PREFIX"), "VITE_API_PREFIX"),
+  mlPrefix: optionalPrefix("VITE_ML_PREFIX", "/ml"),
   currency: Object.freeze({
     locale: requiredValue("VITE_CURRENCY_LOCALE"),
     code: requiredValue("VITE_CURRENCY_CODE"),

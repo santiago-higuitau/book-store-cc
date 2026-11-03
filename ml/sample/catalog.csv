@@ -1,13 +1,61 @@
 book_id,category,title
-00000000-0000-4000-9000-000000000001,Data Systems,Designing Data-Intensive Applications
-00000000-0000-4000-9000-000000000002,Machine Learning,Designing Machine Learning Systems
-00000000-0000-4000-9000-000000000003,Machine Learning,Building Machine Learning Powered Applications
-00000000-0000-4000-9000-000000000004,Machine Learning,Machine Learning Engineering
-00000000-0000-4000-9000-000000000005,Software Engineering,Clean Code
-00000000-0000-4000-9000-000000000006,Software Engineering,The Pragmatic Programmer
-00000000-0000-4000-9000-000000000007,Programming,The C Programming Language
-00000000-0000-4000-9000-000000000008,Computer Science,Introduction to Algorithms
-00000000-0000-4000-9000-000000000009,Distributed Systems,Designing Distributed Systems
-00000000-0000-4000-9000-000000000010,Data Engineering,Fundamentals of Data Engineering
-00000000-0000-4000-9000-000000000011,Software Architecture,Fundamentals of Software Architecture
-00000000-0000-4000-9000-000000000012,Software Architecture,Clean Architecture
+16c08984-fde3-4f7a-9cb7-13d25ce5064f,Computer Science,Algorithms
+d7183fbb-0003-4a07-95ba-472450051a7a,Computer Science,Computer Organization and Design
+b6c39284-48e2-41dd-bb56-a22a65983ba4,Computer Science,Computer Systems: A Programmer's Perspective
+a5d516b8-3818-4f22-8a89-b3842760208f,Computer Science,Grokking Algorithms
+84d787fd-264f-495e-a05d-bf541c246e01,Computer Science,Introduction to Algorithms
+9e57c1af-a15d-4eaf-bc91-25f01c1df3a4,Computer Science,Introduction to the Theory of Computation
+f2b0fdbb-ee3e-489a-b29e-6604c3ede839,Computer Science,Modern Operating Systems
+4b69976d-e5c7-4b5c-97f5-3af44e90586e,Computer Science,Structure and Interpretation of Computer Programs
+f2bb38b7-494e-4cd1-b8d6-25bb0f9de93d,Computer Science,"The Art of Computer Programming, Volume 1"
+0cb234a4-b872-4295-8236-83533c793c2d,Data Engineering,Data Pipelines Pocket Reference
+87e331a5-b9ae-4a47-aa69-c62dfcd8417c,Data Engineering,Fundamentals of Data Engineering
+21299fa4-f20c-4bd4-a123-c4dcfb58894e,Data Systems,Database Internals
+65fb7a30-500f-4dd9-9f9b-e6873b83e2b9,Data Systems,Designing Data-Intensive Applications
+afa352e7-4841-4cc3-8908-2ebd8d1f1a77,Data Systems,High Performance MySQL
+6aa52b67-4aca-46df-b118-3cbd6e6f5719,Data Systems,Kafka: The Definitive Guide
+52ff4d83-175a-49c8-b8c8-1b4632ebe5c7,Data Systems,Seven Databases in Seven Weeks
+9e2909ec-9f23-4695-a749-269768cd24b0,Data Systems,Streaming Systems
+93d06f84-5ddf-4e7d-bf66-b9ae392354a1,Distributed Systems,Designing Distributed Systems
+e832d554-9d00-4187-b4a9-7196f722dbfe,Distributed Systems,Distributed Systems
+2723c444-567c-4051-ab7a-0493f992ffd2,Distributed Systems,Kubernetes: Up and Running
+8f267589-b2ed-4b1d-ae2d-0cb7d68f0bd6,Distributed Systems,Site Reliability Engineering
+5ad8b7bb-30fb-4a2a-adf4-b5f237ce0a38,Machine Learning,Artificial Intelligence: A Modern Approach
+a3d91427-e9ef-4559-b02c-a5ea6b0b4f19,Machine Learning,Building Machine Learning Powered Applications
+0726b509-eccf-4cae-bf40-05cf3c74b5c3,Machine Learning,Deep Learning
+2dfc3da1-f3d4-400e-b7c4-eb5a2144602e,Machine Learning,Designing Machine Learning Systems
+a545b1f0-c0e1-4a68-a822-be665debae25,Machine Learning,Grokking Deep Learning
+3ce5c1de-ab3e-4a48-bb46-690ef5cb5454,Machine Learning,"Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow"
+16251f85-4664-465a-bc8b-db685e25a8d2,Machine Learning,Machine Learning Engineering
+0082755b-a79c-4da1-9eaf-848f5693ee7c,Machine Learning,Natural Language Processing with Transformers
+86ba7fe9-0f06-47f3-a90b-45f3f6f4fdd1,Machine Learning,Pattern Recognition and Machine Learning
+9b30f2c0-fcae-40e9-9ff3-a25763f6caa6,Machine Learning,Practical Statistics for Data Scientists
+338052b5-8f9c-4f7c-abf2-7b334dc8ec2e,Machine Learning,Reinforcement Learning: An Introduction
+83065c93-629d-49a6-bb0e-c10e1c2b3b48,Machine Learning,The Elements of Statistical Learning
+336c9eaf-fd30-4ad8-9207-300bc1260e45,Programming,Effective Java
+ef7b803d-2faf-412e-9a6e-4c86a3f1afb5,Programming,Fluent Python
+4b931b5d-86dd-44c3-bc0c-1ed0b65fc901,Programming,JavaScript: The Good Parts
+204346b1-1a19-4a41-8119-646c844023c2,Programming,Programming Pearls
+35d95b08-b314-47b2-830c-ea2a6533351f,Programming,Python Crash Course
+a5df0284-f0c8-42d4-a5d3-93b0a3a55a5f,Programming,The C Programming Language
+69127883-bfdf-43ad-ae5c-1666e917b750,Programming,The Go Programming Language
+9304c808-e5de-4f19-8336-e0a56298f0ae,Software Architecture,Building Microservices
+a970bdc4-c125-436a-ba7c-c1c6c5e6f363,Software Architecture,Clean Architecture
+6fda5147-102b-4319-908c-bd63f9bbf3fb,Software Architecture,Domain-Driven Design
+573645a7-7b60-4803-a8b1-651605a15b10,Software Architecture,Enterprise Integration Patterns
+b404d795-ba3d-4c15-903f-e1c2bfc1137d,Software Architecture,Fundamentals of Software Architecture
+296f9150-e7c9-4900-b7ec-18a15baad029,Software Architecture,Patterns of Enterprise Application Architecture
+6d0baa2c-f2f7-49e3-9e47-bd80afd29d84,Software Architecture,Software Architecture: The Hard Parts
+a3cbf04f-9b9d-42c2-af5d-e3f3178bcb2f,Software Engineering,A Philosophy of Software Design
+399c48dd-9696-4746-a661-87bac7ee2adb,Software Engineering,Accelerate
+6a148304-106b-444b-b2bd-b8bb1cb4b1a0,Software Engineering,Clean Agile
+cec9f280-ad48-4c65-8998-5fbd2d5b2b17,Software Engineering,Clean Code
+c786065e-a5ed-485b-88f7-92b27d49e250,Software Engineering,Code Complete
+ea9be907-f571-4152-ace2-412882f7bcef,Software Engineering,Continuous Delivery
+09c73afd-eeb3-4f6e-8f2a-404de7974204,Software Engineering,Design Patterns
+93a1bdb6-6bd3-4f0b-9039-16679f8035aa,Software Engineering,Refactoring
+f33254cc-8294-4f2d-a790-a17c36e303c9,Software Engineering,Release It!
+047db867-6e05-48ae-99e8-aba1b42d2f70,Software Engineering,The Mythical Man-Month
+3cd14a4b-5656-4006-ba32-68d370464f00,Software Engineering,The Phoenix Project
+065dd106-9153-4a5f-87e1-0d5f0e2b736f,Software Engineering,The Pragmatic Programmer
+9e4f6fc0-9f51-4560-bed5-0c8369917139,Software Engineering,Working Effectively with Legacy Code
