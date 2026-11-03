@@ -59,7 +59,7 @@ VALUES
   ('9780134190440', 'The Go Programming Language', 'Alan A. A. Donovan and Brian W. Kernighan', 'The authoritative guide to programming in Go.', 'Programming', 'Addison-Wesley', 2016, 144900.00, 20, 'https://covers.openlibrary.org/b/id/7427319-L.jpg'),
   ('9780596517748', 'JavaScript: The Good Parts', 'Douglas Crockford', 'The parts of JavaScript worth using.', 'Programming', 'O''Reilly Media', 2008, 169900.00, 8, 'https://covers.openlibrary.org/b/id/2536428-L.jpg'),
   ('9781718502703', 'Python Crash Course', 'Eric Matthes', 'A hands-on, project-based introduction to programming.', 'Programming', 'No Starch Press', 2022, 244900.00, 20, 'https://covers.openlibrary.org/b/id/15225531-L.jpg'),
-  ('9780201657883', 'Programming Pearls', 'Jon Louis Bentley', 'Essays on the craft of programming.', 'Programming', 'Addison-Wesley', 2000, 179900.00, 22, 'https://covers.openlibrary.org/b/id/8112458-L.jpg'),
+  ('9780201657883', 'Programming Pearls', 'Jon Louis Bentley', 'Essays on the craft of programming.', 'Programming', 'Addison-Wesley', 2000, 179900.00, 22, 'https://covers.openlibrary.org/b/id/135673-L.jpg'),
   ('9780262510875', 'Structure and Interpretation of Computer Programs', 'Harold Abelson, Gerald Jay Sussman and Julie Sussman', 'A classic introduction to computer science through Scheme.', 'Computer Science', 'MIT Press', 1996, 224900.00, 14, 'https://covers.openlibrary.org/b/id/9325174-L.jpg'),
   ('9780134092669', 'Computer Systems: A Programmer''s Perspective', 'Randal E. Bryant and David R. O''Hallaron', 'How hardware and systems software affect program behavior.', 'Computer Science', 'Pearson', 2015, 259900.00, 20, 'https://covers.openlibrary.org/b/id/14858059-L.jpg'),
   ('9781133187790', 'Introduction to the Theory of Computation', 'Michael Sipser', 'Automata, computability, and complexity.', 'Computer Science', 'Cengage Learning', 2013, 224900.00, 18, 'https://covers.openlibrary.org/b/id/14572027-L.jpg'),
@@ -72,6 +72,26 @@ VALUES
   ('9781098110208', 'Kubernetes: Up and Running', 'Brendan Burns, Joe Beda and Kelsey Hightower', 'Dive into the future of infrastructure.', 'Distributed Systems', 'O''Reilly Media', 2022, 254900.00, 19, 'https://covers.openlibrary.org/b/id/13512019-L.jpg'),
   ('9781543057386', 'Distributed Systems', 'Andrew S. Tanenbaum, Maarten Van Steen and Maarten van Steen', 'Principles and paradigms of distributed systems.', 'Distributed Systems', 'CreateSpace', 2017, 259900.00, 20, 'https://covers.openlibrary.org/b/id/11158985-L.jpg')
 ON CONFLICT (isbn) DO NOTHING;
+
+-- Covers for the original catalog. Several ISBNs of the original seed belong to other books,
+-- so each cover comes from the verified ISBN of its title. Only fills missing covers.
+UPDATE books AS b
+SET image = v.image
+FROM (VALUES
+  ('9781491950357', 'https://covers.openlibrary.org/b/id/8434671-L.jpg'),
+  ('9781098115784', 'https://covers.openlibrary.org/b/id/13314480-L.jpg'),
+  ('9781617294433', 'https://covers.openlibrary.org/b/id/10431943-L.jpg'),
+  ('9780132350884', 'https://covers.openlibrary.org/b/id/15126503-L.jpg'),
+  ('9780201616224', 'https://covers.openlibrary.org/b/id/7386133-L.jpg'),
+  ('9780131103627', 'https://covers.openlibrary.org/b/id/5732572-L.jpg'),
+  ('9780262046305', 'https://covers.openlibrary.org/b/id/13768952-L.jpg'),
+  ('9781449373320', 'https://covers.openlibrary.org/b/id/8509962-L.jpg'),
+  ('9781492078005', 'https://covers.openlibrary.org/b/id/14831765-L.jpg'),
+  ('9781098107963', 'https://covers.openlibrary.org/b/id/10193363-L.jpg'),
+  ('9780134494166', 'https://covers.openlibrary.org/b/id/15126500-L.jpg')
+) AS v(isbn, image)
+WHERE b.isbn = v.isbn
+  AND b.image IS NULL;
 
 INSERT INTO customers (
   customer_id, first_name, last_name, email, city, country
